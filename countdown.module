@@ -1,0 +1,21 @@
+<?php
+
+function countdown_menu() {
+    $items = array();
+    $items['countdown'] = array(
+        'title' => 'Test countdown',
+        'page callback' => 'php_countdown',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function php_countdown() {
+
+    $now = date("c",time()+30);
+
+    return "<span class='jst_timer'>
+            <span style='display:none' class='datetime'>$now</span>
+            </span>";
+}

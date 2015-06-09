@@ -1,0 +1,6 @@
+name = Product Countdown Timer
+description = Creates a countdown timer for featured product
+package = Partake
+core = 7.x
+files[] = countdown.module
+dependencies = jstimer
